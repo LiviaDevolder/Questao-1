@@ -9,7 +9,7 @@ function estoque() {
         document.location.reload()
     } else {
         do {
-            vacinas.push(prompt(`Digite o tipo de vacina para a pessoa ${vacinas.length + 1}. CoronaVac = 1 e AstraZenca = 2. Se o tipo de vacina digitado for inválido, automaticamente o paciente será vacinado com AstraZeneca.`))
+            vacinas.push(prompt(`Digite o tipo de vacina para a pessoa ${vacinas.length + 1}. CoronaVac = 1 e AstraZeneca = 2. Se o tipo de vacina digitado for inválido, automaticamente o paciente será vacinado com AstraZeneca.`))
         } while (vacinas.length < pessoas);
         for (let i = 0; i < vacinas.length; i++) {
             if (vacinas[i] == 1) {
